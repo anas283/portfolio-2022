@@ -1,15 +1,45 @@
 /* You can add global styles to this file, and also import other style files */
 
 @import "~bootstrap/dist/css/bootstrap.css";
-@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600&display=swap');
 
 body, html {
     overflow-x: hidden;
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Outfit', sans-serif;
+}
+
+:root {
+    $dark: #111726;
+    $light: #F5F6F6;
 }
 
 .btn-dark {
-    background-color: #111726;
-    padding: 15px 20px;
-    border-radius: 10px;
+    background-color: var(dark);
+    padding: 8px 20px;
+    border-radius: 8px;
+    font-size: 16px;
+    border: 1px solid var(dark);
+    transition: all 0.2s ease-in-out;
+
+    &:hover {
+        color: var(--dark) !important;
+        background-color: white;
+    }
+}
+
+.btn-dark-outline {
+    background-color: transparent;
+    border: 1px solid var(dark);
+    padding: 8px 20px;
+    border-radius: 8px;
+    transition: all 0.2s ease-in-out;
+
+    &:hover {
+        color: white;
+        background-color: var(dark);
+    }
+}
+
+.bg-light {
+    background-color: var(--light) !important;
 }
