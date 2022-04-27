@@ -12,4 +12,7 @@ export class HomeComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  goToUrl(url: string) {
+    window.open(url, '_blank')
+  }
 }
