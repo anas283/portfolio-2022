@@ -1,3 +1,5 @@
+$blue: #255ae0;
+
 .wrapper-home {
   width: 100%;
   height: 100%;
@@ -21,24 +23,17 @@
     }
 
     .section-subtitle {
-      font-weight: 400;
+      font-weight: 300;
       font-size: 20px;
       line-height: 30px;
-      color: #000000;
+      color: #8a8a8a;
       margin-top: 20px;
     }
 
     .link {
-      color: #9f9f9f;
-      cursor: pointer;
-      text-decoration: underline;
-      text-underline-offset: 5px;
+      color: #8a8a8a;
       line-height: 20px;
-      transition: all 0.2s ease-in-out;
-
-      &:hover {
-        color: blue;
-      }
+      font-weight: 600;
     }
   }
 }
@@ -47,24 +42,70 @@
   padding: 50px 0;
 
   .card-1 {
-    min-height: 354px;
-    max-height: 354px;
+    min-height: 415px;
+    max-height: 415px;
     background: #ffffff;
     box-shadow: 0px 0px 30px 3px rgba(0, 0, 0, 0.1);
     border-radius: 15px;
     margin-top: 15px;
-    cursor: pointer;
+    // cursor: pointer;
     transition: all 0.2s ease-in-out;
     overflow: hidden;
 
-    &:hover {
-      transform: translateY(-10px);
-    }
+    // &:hover {
+    //   transform: translateY(-10px);
+    // }
 
     .work-image {
       width: 100%;
       height: 100%;
       object-fit: cover;
+      cursor: pointer;
+    }
+
+    .image-container {
+      width: 100%;
+      height: 300px;
+    }
+
+    .card-info {
+      padding: 15px 20px;
+
+      .title {
+        margin-bottom: 15px;
+        cursor: pointer;
+        transition: all 0.2s ease-in-out;
+
+        &:hover {
+          color: $blue;
+        }
+      }
+
+      .subtitle {
+        font-size: 14px;
+        font-weight: 400;
+        margin-bottom: 5px;
+
+        a {
+          color: black;
+
+          &:hover {
+            color: $blue;
+          }
+        }
+      }
+
+      .badge-orange {
+        width: 50px;
+        height: 30px;
+        border-radius: 25px;
+        color: white;
+        background-color: #e6b926;
+        padding: 4px 10px;
+        text-transform: uppercase;
+        font-size: 14px;
+        text-align: center
+      }
     }
   }
 

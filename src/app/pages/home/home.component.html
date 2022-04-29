@@ -13,7 +13,7 @@
           alt="anas"
         />
         <h1 class="section-title text-start">
-          Anas is a Frontend Developer living and working in Kedah.
+          Anas is a Front End Developer living and working in Kedah.
         </h1>
       </div>
       <h5
@@ -23,10 +23,10 @@
         data-aos-easing="ease-in-out"
         class="section-subtitle text-start col-sm-12 col-md-8"
       >
-        Currently Frontend Developer at <a href="/" class="link">TriSquare</a>.
-        Previously Frontend Developer Intern at
-        <a href="/" class="link">Coder53</a>. Alumni
-        <a href="/" class="link">UiTM Kedah</a> 2021.
+        Currently Front End Developer at <span class="link">TriSquare</span>.
+        Previously Front End Developer Intern at
+        <span class="link">Coder53</span>. Alumni
+        <span class="link">UiTM Kedah</span> 2021.
       </h5>
     </div>
   </div>
@@ -43,14 +43,29 @@
     <div class="d-flex flex-wrap">
       <div class="col-12 col-md-6">
         <div
-          (click)="goToUrl('https://crypto-web-1.vercel.app')"
           class="card-1 card-pr5"
         >
-          <img
-            src="../../../assets/images/work-1.png"
-            alt="work-1"
-            class="work-image"
-          />
+          <div class="image-container" (click)="goToUrl('https://crypto-web-1.vercel.app')">
+            <img
+              src="../../../assets/images/work-1.png"
+              alt="work-1"
+              class="work-image"
+            />
+          </div>
+          <div class="card-info">
+            <div class="row">
+              <div class="col-10">
+                <h5 class="title" (click)="goToUrl('https://crypto-web-1.vercel.app')">SaaS Landing Page</h5>
+                <div class="row">
+                  <h6 class="subtitle">Designed by: <a href="https://www.figma.com/file/HSG2PhWV3o3Uw8YhsOv8tO/SaaS-Landing-Page-5-(Community)?node-id=0%3A1" target="_blank">AR Shakir</a></h6>
+                  <h6 class="subtitle">Built by: Me</h6>
+                </div>
+              </div>
+              <div class="col-2 d-flex justify-content-end">
+                <span class="badge-orange">wip</span>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
       <div class="col-12 col-md-6">
