@@ -61,6 +61,11 @@ $blue: #255ae0;
       height: 100%;
       object-fit: cover;
       cursor: pointer;
+      transition: all 0.2s ease-in-out;
+
+      &:hover {
+        opacity: .7;
+      }
     }
 
     .image-container {
@@ -95,14 +100,13 @@ $blue: #255ae0;
         }
       }
 
-      .badge-orange {
-        width: 50px;
+      .badge-red {
+        width: fit-content;
         height: 30px;
         border-radius: 25px;
         color: white;
-        background-color: #e6b926;
+        background-color: #dd1b16;
         padding: 4px 10px;
-        text-transform: uppercase;
         font-size: 14px;
         text-align: center
       }
