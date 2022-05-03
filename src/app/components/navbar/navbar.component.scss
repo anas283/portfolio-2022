@@ -5,20 +5,22 @@
   .navs {
     display: flex;
     flex-direction: row;
-    margin-right: 30px;
+    margin-right: 20px;
 
     .nav {
-      margin: 0 10px;
+      margin: 0 8px;
       cursor: pointer;
       transition: all 0.2s ease-in-out;
 
-      .logo {
-        width: 30px;
-        height: 30px;
+      .icon {
+        color: var(--gray);
+        transition: all 0.2s ease-in-out;
       }
 
       &:hover {
-        transform: translateY(-5px);
+        .icon {
+          color: var(--blue);
+        }
       }
     }
   }
