@@ -163,6 +163,19 @@
   margin-left: 10px;
 }
 
+@media only screen and (max-width: 991px) {
+  .wrapper-work {
+    padding: 20px;
+
+    .card-pr5 {
+      margin-right: 0;
+    }
+    .card-pl5 {
+      margin-left: 0;
+    }
+  }
+}
+
 @media only screen and (max-width: 600px) {
   .wrapper-home {
     padding: 20px;
@@ -177,17 +190,6 @@
         font-size: 16px;
         line-height: 24px;
       }
-    }
-  }
-
-  .wrapper-work {
-    padding: 20px;
-
-    .card-pr5 {
-      margin-right: 0;
-    }
-    .card-pl5 {
-      margin-left: 0;
     }
   }
 }
