@@ -23,6 +23,11 @@
         }
       }
     }
+
+    .resume {
+      color: var(--gray);
+      text-decoration: none;
+    }
   }
 }
 
@@ -30,5 +35,9 @@
   .navbar {
     width: 100%;
     padding: 20px 20px;
+
+    .icon {
+      margin-top: -5px;
+    }
   }
 }
