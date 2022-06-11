@@ -1,3 +1,10 @@
-<app-navbar></app-navbar>
-<router-outlet></router-outlet>
-<app-footer></app-footer>
+<app-navbar *ngIf="!maintenance"></app-navbar>
+<router-outlet *ngIf="!maintenance"></router-outlet>
+<app-footer *ngIf="!maintenance"></app-footer>
+
+<div *ngIf="maintenance" class="center"
+  data-aos="fade-up"
+  data-aos-duration="600"
+  data-aos-easing="ease-in-out">
+  <h1>Hi 👋🏻</h1>
+</div>
