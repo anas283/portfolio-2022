@@ -2,9 +2,6 @@
 <router-outlet *ngIf="!maintenance"></router-outlet>
 <app-footer *ngIf="!maintenance"></app-footer>
 
-<div *ngIf="maintenance" class="center"
-  data-aos="fade-up"
-  data-aos-duration="600"
-  data-aos-easing="ease-in-out">
-  <h1>Hi 👋🏻</h1>
+<div *ngIf="maintenance" class="center">
+  <div class="loader"></div>
 </div>
