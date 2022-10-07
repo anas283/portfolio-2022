@@ -44,6 +44,11 @@
       color: var(--blue);
       margin-left: -10px;
     }
+
+    .hero-image {
+      width: 400px;
+      height: 400px;
+    }
   }
 }
 
@@ -197,6 +202,16 @@
       .section-subtitle {
         font-size: 16px;
         line-height: 24px;
+      }
+
+      .hero-image {
+        width: 300px;
+        height: 300px;
+      }
+      
+      .center-sm {
+        display: flex;
+        justify-content: center;
       }
     }
   }
