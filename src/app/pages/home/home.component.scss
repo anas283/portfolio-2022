@@ -74,10 +74,8 @@
     border: 1px solid #e5e5e5;
 
     .work-image {
-      width: 100%;
-      height: 100%;
-      min-width: 420px;
-      min-height: 300px;
+      width: 420px;
+      height: 300px;
       object-fit: cover;
       cursor: pointer;
       transition: all 0.2s ease-in-out;
@@ -212,6 +210,15 @@
       .center-sm {
         display: flex;
         justify-content: center;
+      }
+    }
+  }
+
+  .wrapper-work {
+    .card-1 {
+      .work-image {
+        width: 320px;
+        height: 270px;
       }
     }
   }
