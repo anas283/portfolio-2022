@@ -12,18 +12,24 @@
       border-radius: 50px;
     }
 
+    .section-top {
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 20px;
+      margin-top: 20px;
+    }
+
     .section-title {
       font-weight: 500;
-      font-size: 50px;
-      line-height: 58px;
-      color: #000000;
+      font-size: 40px;
+      line-height: 46px;
       margin-top: 20px;
     }
 
     .section-subtitle {
       font-weight: 300;
-      font-size: 18px;
-      line-height: 28px;
+      font-size: 16px;
+      line-height: 24px;
       color: var(--gray);
       margin-top: 20px;
     }
