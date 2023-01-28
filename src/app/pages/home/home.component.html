@@ -3,28 +3,74 @@
     <div class="section-home">
       <div class="row d-flex align-items-center">
         <div class="col-12 col-lg-6">
-          <h4 class="section-title text-start">
+          <h4 class="section-title text-start" data-aos="fade-down" data-aos-duration="700">
             Frontend Developer based in Malaysia
           </h4>
-          <h5 class="section-subtitle text-start">
+          <h5 class="section-subtitle text-start" data-aos="fade-down" data-aos-duration="700" data-aos-delay="300">
             I love to craft solid and scalable frontend products with great 
             user experiences. Hightly skilled at progressive enhancement 
             and near pixel perfect websites.
           </h5>
+          <div data-aos="fade-down" data-aos-duration="700" data-aos-delay="600">
+            <a href="#Projects" class="btn btn-light mt-3">View Projects</a>
+          </div>
         </div>
-        <div class="col-12 col-lg-6 center-sm">
-          <img class="hero-image" src="../../../assets/images/hero.webp">
+        <div class="col-12 col-lg-6 center-sm d-flex justify-content-center align-items-center">
+          <img class="hero-image" src="../../../assets/images/184.png">
         </div>
       </div>
     </div>
   </div>
 
-  <div class="wrapper-work">
-    <h2 class="section-title">Side projects I've built</h2>
+  <div class="wrapper-work" id="Projects">
+    <h2 class="section-title">Side Projects</h2>
 
     <div class="d-flex flex-wrap">
-      <div class="col-12 col-lg-6">
-        <div class="card-1 card-pr5">
+      <div class="col-12 col-lg-6" data-aos="fade-up" data-aos-duration="500">
+        <div class="card-1 card-pr5 mt-4" >
+          <div
+            class="image-container"
+            (click)="goToUrl('https://travelo-my.vercel.app/')"
+          >
+            <img
+              src="../../../assets/images/Travelo Preview.png"
+              alt="travelo-preview"
+              class="work-image"
+              loading="lazy"
+            />
+          </div>
+          <div class="card-info">
+            <div class="row">
+              <div class="col-12 d-flex justify-content-between">
+                <div>
+                  <h5
+                    class="title"
+                    (click)="goToUrl('https://travelo-my.vercel.app/')"
+                  >
+                    App Landing Page
+                  </h5>
+                  <div class="row">
+                    <h6 class="subtitle">
+                      Design inspired from:
+                      <a
+                        href="https://dribbble.com/"
+                        target="_blank"
+                        >Dribbble</a
+                      >
+                    </h6>
+                  </div>
+                  <h6 class="subtitle">Made with HTML, CSS, Bootstrap</h6>
+                </div>
+                <div>
+                  <h6 class="subtitle">15 Jan 2022</h6>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-lg-6" data-aos="fade-up" data-aos-duration="500">
+        <div class="card-1 card-pl5 mt-4">
           <div
             class="image-container"
             (click)="goToUrl('https://crypto-web-1.vercel.app')"
@@ -38,32 +84,36 @@
           </div>
           <div class="card-info">
             <div class="row">
-              <div class="col-12">
-                <h5
-                  class="title"
-                  (click)="goToUrl('https://crypto-web-1.vercel.app')"
-                >
-                  SaaS Landing Page
-                </h5>
-                <div class="row">
-                  <h6 class="subtitle">
-                    Designed by:
-                    <a
-                      href="https://www.figma.com/file/HSG2PhWV3o3Uw8YhsOv8tO/SaaS-Landing-Page-5-(Community)?node-id=0%3A1"
-                      target="_blank"
-                      >AR Shakir</a
-                    >
-                  </h6>
+              <div class="col-12 d-flex justify-content-between">
+                <div>
+                  <h5
+                    class="title"
+                    (click)="goToUrl('https://crypto-web-1.vercel.app')"
+                  >
+                    SaaS Landing Page
+                  </h5>
+                  <div class="row">
+                    <h6 class="subtitle">
+                      Designed by:
+                      <a
+                        href="https://www.figma.com/file/HSG2PhWV3o3Uw8YhsOv8tO/SaaS-Landing-Page-5-(Community)?node-id=0%3A1"
+                        target="_blank"
+                        >AR Shakir</a
+                      >
+                    </h6>
+                  </div>
+                  <h6 class="subtitle">Made with Angular, SCSS, Bootstrap</h6>
                 </div>
-                <span class="badge badge-red">Angular</span>
+                <div>
+                  <h6 class="subtitle">19 May 2022</h6>
+                </div>
               </div>
-              <div class="col-2 d-flex justify-content-end"></div>
             </div>
           </div>
         </div>
       </div>
-      <div class="col-12 col-lg-6">
-        <div class="card-1 card-pl5">
+      <div class="col-12 col-lg-6" data-aos="fade-up" data-aos-duration="500">
+        <div class="card-1 card-pr5 mt-4">
           <div
             class="image-container"
             (click)="goToUrl('https://intro-section-fm.vercel.app')"
@@ -77,30 +127,30 @@
           </div>
           <div class="card-info">
             <div class="row">
-              <div class="col-12">
-                <h5
-                  class="title"
-                  (click)="goToUrl('https://intro-section-fm.vercel.app')"
-                >
-                  Intro Section
-                </h5>
-                <div class="row">
-                  <h6 class="subtitle">
-                    Designed by:
-                    <a
-                      href="https://www.frontendmentor.io/challenges/intro-section-with-dropdown-navigation-ryaPetHE5"
-                      target="_blank"
-                      >Frontend Mentor</a
-                    >
-                  </h6>
+              <div class="col-12 d-flex justify-content-between">
+                <div>
+                  <h5
+                    class="title"
+                    (click)="goToUrl('https://intro-section-fm.vercel.app')"
+                  >
+                    Hero Section
+                  </h5>
+                  <div class="row">
+                    <h6 class="subtitle">
+                      Designed by:
+                      <a
+                        href="https://www.frontendmentor.io/challenges/intro-section-with-dropdown-navigation-ryaPetHE5"
+                        target="_blank"
+                        >Frontend Mentor</a
+                      >
+                    </h6>
+                  </div>
+                  <h6 class="subtitle">Made with HTML, CSS, Bootstrap</h6>
                 </div>
-                <div class="row mx-0">
-                  <span class="badge badge-orange">HTML</span>
-                  <span class="badge badge-blue">CSS</span>
-                  <span class="badge badge-yellow">Javascript</span>
+                <div>
+                  <h6 class="subtitle">19 May 2022</h6>
                 </div>
               </div>
-              <div class="col-2 d-flex justify-content-end"></div>
             </div>
           </div>
         </div>

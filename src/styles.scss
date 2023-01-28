@@ -14,7 +14,7 @@ html {
   --dark: #111726;
   --light: #f5f6f6;
   --gray: #8a8a8a;
-  --blue: #255ae0;
+  --blue: #5F5FFF;
 }
 
 .btn-dark {
@@ -46,10 +46,6 @@ html {
 
 .bg-light {
   background-color: var(--light) !important;
-}
-
-.container {
-  width: 70%;
 }
 
 @media only screen and (max-width: 600px) {
